@@ -14,8 +14,9 @@ export default {
     div{
       background-color: antiquewhite;
       height: 100px;
-      width:300px;
+      width:600px;
       padding: 40px;
       margin: 20px;
+      text-align: center;
     }
 </style>

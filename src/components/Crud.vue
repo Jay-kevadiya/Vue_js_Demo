@@ -78,6 +78,10 @@ export default {
       });
     },
   },
+
+  mounted(){
+      this.getUsers();
+  }
 };
 </script>
 

@@ -16,7 +16,21 @@
     <!-- <ApiData/> -->
     <!-- <BootstrapDemo/> -->
     <!-- <PostApi/> -->
-    <Crud/>
+    <!-- <Crud/> -->
+    <!-- <RoutingDemo/> -->
+
+    <nav>
+        <ul>
+          <li id="as">
+            <router-link to="/">Home</router-link>&nbsp;
+            <router-link to="/crud">Crud</router-link>&nbsp;
+            <router-link to="/routingdemo">RoutingDemo</router-link>&nbsp;
+            <router-link to="/apidata">ApiData</router-link>&nbsp;
+          </li>
+        </ul>
+    </nav>
+
+    <router-view></router-view>
   </div>
 </template>
 
@@ -35,7 +49,8 @@
 // import ApiData from './components/ApiData.vue';
 // import BootstrapDemo from './components/BootstrapDemo.vue';
 // import PostApi from './components/PostApi.vue';
-import Crud from './components/Crud.vue';
+// import Crud from './components/Crud.vue';
+// import RoutingDemo from './components/RoutingDemo.vue';
 
 export default {
   name: 'App',
@@ -54,7 +69,8 @@ export default {
     // ApiData,
     // BootstrapDemo
     // PostApi,
-    Crud
+    // Crud,
+    // RoutingDemo
   },
   data(){
     return{
@@ -84,6 +100,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#as{
+  list-style: none;
+  /* background-color: red; */
 }
 </style>
 
